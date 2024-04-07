@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Image Processing</title>
+    <script src="opencv.js"></script> <!-- Include OpenCV.js -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Medical Image Processing</h1>
+    </header>
+    <main>
+        <section id="uploadSection">
+            <h2>Upload Image</h2>
+            <form id="uploadForm">
+                <input type="file" id="imageUpload" accept=".jpg, .jpeg, .png, .dicom" onchange="displayUploaded()"><br><br>
+                <button onclick="clearUpload()">Clear Upload</button></li>
+                <button onclick="uploadNext()">Upload Next Image</button>
+            </form>
+            <div id="imageDisplay">
+                <!-- Display uploaded image here -->
+            </div>
+        </section>
+        <section id="operationsSection">
+            <h2>Operations</h2>
+            <ul id="operationsList">
+                <li><button onclick="processImage('grayscale')">Grayscale</button></li>
+                <li><button onclick="processImage('edgeDetection')">Edge Detection</button></li>
+                <li><button onclick="processImage('blur')">Blur</button></li>
+                <li><button onclick="processImage('histogramEqualization')">Histogram Equalization</button></li>
+                <li><button onclick="processImage('thresholding')">Thresholding</button></li>
+                <li><button onclick="processImage('medianFilter')">Median Filter</button></li>
+                <li><button onclick="processImage('gaussianFilter')">Gaussian Filter</button></li>
+                <li><button onclick="processImage('morphologicalOperations')">Morphological Operations</button></li>
+                <!-- Add more operations as needed -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

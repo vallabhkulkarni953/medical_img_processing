@@ -1,0 +1,63 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Blue color for header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    height: 100px; /* Set a fixed height for the header */
+    line-height: 100px; /* Center text vertically */
+}
+
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+#imageDisplay {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#operationsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#operationsList li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745; /* Green color for buttons */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
